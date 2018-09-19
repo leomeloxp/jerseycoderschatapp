@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "jc-chat",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -23,7 +23,7 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "jest",
-    "web": "webpack-dev-server --host 0.0.0.0 -d --config ./webpack.config.js  --inline --hot --colors --content-base public/ --history-api-fallback",
+    "web": "webpack-dev-server -d --config ./webpack.config.js  --inline --hot --colors --content-base public/ --history-api-fallback",
     "build": "NODE_ENV=production webpack -p --config ./webpack.config.js"
   },
   "jest": {
