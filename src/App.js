@@ -1,13 +1,24 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+console.disableYellowBox = true;
+console.disableRedBox = true;
 
 export default class App extends React.Component {
+  handleButtonClick = () => {
+    alert('Message');
+  };
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up src/App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Text>First.</Text>
+        <Text>Second.</Text>
+        <Text>Third.</Text>
+        <Button
+          title="Learn More"
+          color="rebeccapurple"
+          onPress={this.handleButtonClick}
+        />
       </View>
     );
   }
@@ -18,6 +29,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
